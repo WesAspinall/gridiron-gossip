@@ -1,7 +1,7 @@
 var topPositions = {
   templateUrl: './top-positions.html',
   controller: 'TopPositionsCtrl'
-}
+};
 
 angular
   .module('components.positions')
@@ -13,6 +13,6 @@ angular
         parent:'app',
         url: 'top-positions',
         component: 'topPositions'
-      })
+      });
   })
   ;

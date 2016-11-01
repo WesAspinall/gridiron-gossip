@@ -1,7 +1,7 @@
 var topCrimes = {
   templateUrl: './top-crimes.html',
   controller: 'TopCrimesCtrl'
-}
+};
 
 angular
   .module('components.crimes')
@@ -13,6 +13,6 @@ angular
         parent:'app',
         url: 'top-crimes',
         component: 'topCrimes'
-      })
+      });
   })
   ;

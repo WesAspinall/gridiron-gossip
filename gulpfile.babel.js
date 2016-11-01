@@ -29,8 +29,15 @@ const paths = {
   templates: `${root}/app/**/*.html`,
   modules: [
     'angular/angular.js',
+    'd3/d3.js',
+    'nvd3/build/nv.d3.js',
+    'angular-nvd3/dist/angular-nvd3.js',
     'angular-ui-router/release/angular-ui-router.js',
     'angular-loading-bar/build/loading-bar.min.js'
+  ],
+  //added to compile nvd3
+  vendorCSS: [
+    'nvd3/build/nv.d3.min.css'
   ],
   static: [
     `${root}/index.html`,
@@ -92,12 +99,20 @@ gulp.task('modules', ['templates'], () => {
     .pipe(gulp.dest(paths.dist + 'js/'));
 });
 
-gulp.task('styles', () => {
+//added to compile nvd3
+gulp.task('vendorStyles', () => {
+  return gulp.src(paths.vendorCSS.map(item => 'node_modules/' + item))
+    .pipe(concat('style.css'))
+    .pipe(gulp.dest(paths.dist + 'css/'));
+});
+
+gulp.task('styles', ['vendorStyles'], () => {
   return gulp.src(paths.styles)
     .pipe(sass({outputStyle: 'compressed'}))
     .on('error', handleError)
     .pipe(gulp.dest(paths.dist + 'css/'));
 });
+
 
 gulp.task('scripts', ['modules'], () => {
   return gulp.src([

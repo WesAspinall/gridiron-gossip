@@ -1,2 +1,2 @@
 angular
-  .module('components.players', ['ui.router']);
+  .module('components.players', ['ui.router', 'nvd3']);

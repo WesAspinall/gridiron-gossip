@@ -1,4 +1,4 @@
-function TopPlayersCtrl (PlayersService, API) {
+function TopPlayersCtrl(PlayersService) {
 
   var ctrl = this;
   ctrl.list = '';
@@ -13,9 +13,9 @@ function TopPlayersCtrl (PlayersService, API) {
 
   function getTopPlayers() {
     PlayersService.getTopPlayers().then((res) => {
-       ctrl.list = res;
-       console.log(ctrl.list);
-       return ctrl.list;
+      ctrl.list = res;
+      console.log(ctrl.list);
+      return ctrl.list;
     });
   }
 
@@ -23,5 +23,4 @@ function TopPlayersCtrl (PlayersService, API) {
 
 angular
   .module('components.players')
-  .controller('TopPlayersCtrl', TopPlayersCtrl)
-  ;
+  .controller('TopPlayersCtrl', TopPlayersCtrl);

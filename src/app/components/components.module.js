@@ -3,5 +3,6 @@ angular
     'components.crimes',
     'components.teams',
     'components.players',
-    'components.positions'
+    'components.positions',
+    'components.charts'
   ]);

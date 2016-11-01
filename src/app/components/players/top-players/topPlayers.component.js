@@ -1,7 +1,7 @@
 var topPlayers = {
   templateUrl: './top-players.html',
   controller: 'TopPlayersCtrl'
-}
+};
 
 angular
   .module('components.players')
@@ -13,6 +13,6 @@ angular
         parent:'app',
         url: 'top-players',
         component: 'topPlayers'
-      })
+      });
   })
   ;

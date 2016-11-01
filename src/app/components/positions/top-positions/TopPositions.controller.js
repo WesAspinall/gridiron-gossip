@@ -1,4 +1,4 @@
-function TopPositionsCtrl (PositionsService, API) {
+function TopPositionsCtrl(PositionsService, API) {
 
   var ctrl = this;
   ctrl.list = '';
@@ -13,9 +13,9 @@ function TopPositionsCtrl (PositionsService, API) {
 
   function getTopPositions() {
     PositionsService.getTopPositions().then((res) => {
-       ctrl.list = res;
-       console.log(ctrl.list);
-       return ctrl.list;
+      ctrl.list = res;
+      console.log(ctrl.list);
+      return ctrl.list;
     });
   }
 
@@ -23,5 +23,4 @@ function TopPositionsCtrl (PositionsService, API) {
 
 angular
   .module('components.positions')
-  .controller('TopPositionsCtrl', TopPositionsCtrl)
-  ;
+  .controller('TopPositionsCtrl', TopPositionsCtrl);

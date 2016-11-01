@@ -1,4 +1,4 @@
-function TopCrimesCtrl (CrimesService, API) {
+function TopCrimesCtrl(CrimesService) {
 
   var ctrl = this;
   ctrl.list = '';
@@ -14,16 +14,15 @@ function TopCrimesCtrl (CrimesService, API) {
   function getTopCrimes() {
 
     CrimesService.getTopCrimes().then((res) => {
-       ctrl.list = res;
-       console.log(ctrl.list);
-       return ctrl.list;
+      ctrl.list = res;
+      console.log(ctrl.list);
+      return ctrl.list;
     });
-        
- 
+
+
   }
 }
 
 angular
   .module('components.crimes')
-  .controller('TopCrimesCtrl', TopCrimesCtrl)
-  ;
+  .controller('TopCrimesCtrl', TopCrimesCtrl);
