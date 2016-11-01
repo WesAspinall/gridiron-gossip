@@ -12,15 +12,11 @@ function AppSidebarCtrl() {
   }, {
     label: 'Top Positions',
     icon: 'child_care',
-    state: 'family'
+    state: 'top-positions'
   }, {
     label: 'Teams',
     icon: 'accessibility',
-    state: 'acquaintances'
-  }, {
-    label: 'Following',
-    icon: 'remove_red_eye',
-    state: 'following'
+    state: 'top-teams'
   }];
   
 }

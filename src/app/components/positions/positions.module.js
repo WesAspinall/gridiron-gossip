@@ -1,2 +1,2 @@
 angular
-  .module('components.positions', []);
+  .module('components.positions', ['ui.router']);

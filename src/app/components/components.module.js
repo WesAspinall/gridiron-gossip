@@ -2,5 +2,6 @@ angular
   .module('components', [
     'components.crimes',
     'components.teams',
-    'components.players'
+    'components.players',
+    'components.positions'
   ]);
