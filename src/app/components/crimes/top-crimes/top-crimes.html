@@ -1,0 +1,6 @@
+<div>
+  <ol ng-if='$ctrl.list.length'>
+    Top {{$ctrl.list.length}} crimes 
+    <li ng-repeat='crime in $ctrl.list'> {{crime.Category}} ({{crime.arrest_count}}) </li>
+  </ol>
+</div>

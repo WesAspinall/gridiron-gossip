@@ -1,7 +1,7 @@
 {
-  "name": "nfl-dirt",
+  "name": "gridiron-gossip",
   "version": "0.1.0",
-  "description": "nfl-dirt",
+  "description": "nfl arrests grouped by various categories",
   "main": "index.js",
   "scripts": {
     "start": "gulp",

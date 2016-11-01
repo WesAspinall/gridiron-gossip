@@ -1,0 +1,7 @@
+<div>
+  <pre></pre>
+  <ol ng-if='$ctrl.list.length'>
+    Top {{$ctrl.list.length}} Players 
+    <li ng-repeat='player in $ctrl.list'> {{player.Name}} ({{player.arrest_count}} arrests) </li>
+  </ol>
+</div>

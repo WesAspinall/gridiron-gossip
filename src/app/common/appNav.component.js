@@ -1,13 +1,10 @@
 var appNav = {
 
-  templateUrl: './app-nav.html',
-  controller: function() {
-    this.appTitle = 'GridironGossip';
-  }
-  
+  templateUrl: './app-nav.html'
 
 };
 
 angular
   .module('app')
   .component('appNav', appNav)
+  ;
