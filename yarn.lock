@@ -746,6 +746,14 @@ boom@2.x.x:
   dependencies:
     hoek "2.x.x"
 
+bourbon, bourbon@^4.2.6:
+  version "4.2.7"
+  resolved "https://registry.yarnpkg.com/bourbon/-/bourbon-4.2.7.tgz#48a805dff475fbf61e002a64e1e4db68d2f82fba"
+
+bourbon-neat@1.7.2:
+  version "1.7.2"
+  resolved "https://registry.yarnpkg.com/bourbon-neat/-/bourbon-neat-1.7.2.tgz#a228b1274479de2476d32b33153107ca5053cf3d"
+
 brace-expansion@^1.0.0:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/brace-expansion/-/brace-expansion-1.1.6.tgz#7197d7eaa9b87e648390ea61fc66c84427420df9"
@@ -2866,6 +2874,10 @@ jodid25519@^1.0.0:
   dependencies:
     jsbn "~0.1.0"
 
+jquery:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.1.1.tgz#347c1c21c7e004115e0a4da32cece041fad3c8a3"
+
 js-tokens@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-2.0.0.tgz#79903f5563ee778cc1162e6dcf1a0027c97f9cb5"
@@ -3515,6 +3527,12 @@ no-case@^2.2.0:
   dependencies:
     lower-case "^1.1.1"
 
+node-bourbon, node-bourbon@^4.2.3:
+  version "4.2.8"
+  resolved "https://registry.yarnpkg.com/node-bourbon/-/node-bourbon-4.2.8.tgz#e444f1f09434ab7650ea318c28e2e103d3f942cd"
+  dependencies:
+    bourbon "^4.2.6"
+
 node-emoji@^1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/node-emoji/-/node-emoji-1.4.1.tgz#c9fa0cf91094335bcb967a6f42b2305c15af2ebc"
@@ -3539,6 +3557,13 @@ node-gyp@^3.3.1:
     semver "2.x || 3.x || 4 || 5"
     tar "^2.0.0"
     which "1"
+
+node-neat:
+  version "1.7.2"
+  resolved "https://registry.yarnpkg.com/node-neat/-/node-neat-1.7.2.tgz#38472910b815e261b8b1b99ba519994465a15c21"
+  dependencies:
+    bourbon-neat "1.7.2"
+    node-bourbon "^4.2.3"
 
 node-notifier@^4.1.0:
   version "4.6.1"
@@ -3672,6 +3697,10 @@ object.omit@^2.0.0:
   dependencies:
     for-own "^0.1.4"
     is-extendable "^0.1.1"
+
+oclazyload:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/oclazyload/-/oclazyload-1.0.9.tgz#3979f973c154dff452603aa0a7e0a180beb0a775"
 
 on-finished@~2.3.0:
   version "2.3.0"

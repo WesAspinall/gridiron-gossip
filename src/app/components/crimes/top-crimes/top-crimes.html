@@ -1,7 +1,21 @@
-<div>
-  <crimes-chart></crimes-chart>
-  <ol ng-if='$ctrl.list.length'>
-    Top {{$ctrl.list.length}} crimes 
-    <li ng-repeat='crime in $ctrl.list'> {{crime.Category}} ({{crime.arrest_count}}) </li>
-  </ol>
+<!-- <div>
+  <pre>{{$ctrl.crimes | json}}</pre>
+<div class='flex-container'>
+  <div ng-repeat='item in $ctrl.crimes track by $index'>
+    {{item.Category}} 
+  </div>
+</div>
+
+  <crimes-chart class='crimes-chart' options='$ctrl.options' data='$ctrl.list'></crimes-chart>
+
+
+
+</div> -->
+
+
+<div class='flex-container'>
+
+ <div class="left" ng-repeat='item in $ctrl.crimes track by $index'>{{item.Category}}</div>
+ <div class="center"></div>
+ <div class="right"></div>
 </div>

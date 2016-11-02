@@ -18,6 +18,7 @@ import child from 'child_process';
 import sourcemaps from 'gulp-sourcemaps';
 import notify from 'gulp-notify';
 
+
 const exec = child.exec;
 const argv = yargs.argv;
 const root = 'src/';
@@ -25,20 +26,20 @@ const paths = {
   dist: './dist/',
   scripts: [`${root}/app/**/*.js`, `!${root}/app/**/*.spec.js`],
   tests: `${root}/app/**/*.spec.js`,
-  styles: `${root}/sass/*.scss`,
+  styles: `${root}/sass/**/*.scss`,
   templates: `${root}/app/**/*.html`,
   modules: [
-    'angular/angular.js',
-    'd3/d3.js',
+    'angular/angular.min.js',
+    'd3/d3.min.js',
     'nvd3/build/nv.d3.js',
     'angular-nvd3/dist/angular-nvd3.js',
+    'oclazyload/dist/ocLazyLoad.min.js',
+    'jquery/dist/jquery.min.js',
     'angular-ui-router/release/angular-ui-router.js',
     'angular-loading-bar/build/loading-bar.min.js'
   ],
   //added to compile nvd3
-  vendorCSS: [
-    'nvd3/build/nv.d3.min.css'
-  ],
+  nvd3: 'nvd3/build/nv.d3.min.css',
   static: [
     `${root}/index.html`,
     `${root}/fonts/**/*`,
@@ -99,16 +100,10 @@ gulp.task('modules', ['templates'], () => {
     .pipe(gulp.dest(paths.dist + 'js/'));
 });
 
-//added to compile nvd3
-gulp.task('vendorStyles', () => {
-  return gulp.src(paths.vendorCSS.map(item => 'node_modules/' + item))
-    .pipe(concat('style.css'))
-    .pipe(gulp.dest(paths.dist + 'css/'));
-});
 
-gulp.task('styles', ['vendorStyles'], () => {
-  return gulp.src(paths.styles)
-    .pipe(sass({outputStyle: 'compressed'}))
+gulp.task('styles', () => {
+  return gulp.src([paths.styles, paths.nvd3])
+    .pipe(sass({outputStyle: 'compressed', includePaths: require('node-neat').includePaths}))
     .on('error', handleError)
     .pipe(gulp.dest(paths.dist + 'css/'));
 });

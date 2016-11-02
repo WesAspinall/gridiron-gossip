@@ -1,6 +1,11 @@
 var crimesChart = {
-  templateUrl: './crimes-chart.html',
-  controller: 'CrimesChartCtrl'
+
+  bindings: {
+    data: '<',
+    options: '<'
+  },
+
+  templateUrl: './crimes-chart.html'
 };
 
 angular
