@@ -1,0 +1,7 @@
+<div>
+  <pre></pre>
+  <ol ng-if='$ctrl.list.length'>
+    Top {{$ctrl.list.length}} Positions 
+    <li ng-repeat='position in $ctrl.list'> {{position.Position}} ({{position.arrest_count}} arrests) </li>
+  </ol>
+</div>

@@ -2,28 +2,24 @@ function AppSidebarCtrl() {
   var ctrl = this;
 
   ctrl.contactTags = [{
-    label: 'All contacts',
+    label: 'Top Players',
     icon: 'star',
-    state: 'none'
+    state: 'top-players'
   }, {
-    label: 'Friends',
+    label: 'Top Crimes',
     icon: 'people',
-    state: 'friends'
+    state: 'top-crimes'
   }, {
-    label: 'Family',
+    label: 'Top Positions',
     icon: 'child_care',
-    state: 'family'
+    state: 'top-positions'
   }, {
-    label: 'Acquaintances',
+    label: 'Teams',
     icon: 'accessibility',
-    state: 'acquaintances'
-  }, {
-    label: 'Following',
-    icon: 'remove_red_eye',
-    state: 'following'
+    state: 'top-teams'
   }];
   
-};
+}
 
 angular
   .module('app')
