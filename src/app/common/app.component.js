@@ -14,7 +14,8 @@ angular
 
     $stateProvider
       .state('app', {
-        url: '/',
+        redirectTo: 'landing',
+        url: '/app',
         component: 'app'
       });
   });
