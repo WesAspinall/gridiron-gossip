@@ -1,64 +1,16 @@
 @import 'bourbon';
 @import 'neat';
 
-.header {
-  height: 60px;
-}
-.header__fixed {
-  background: #fff;
-  height: inherit;
-  position: fixed;
-  top: 0;
-  left: 250px;
-  right: 0;
-  border-bottom: 1px solid #E9EEF3;
-  padding: 13px 20px;
-  font-size: 16px;
-}
-.header__brand {
-  font-size: 24px;
-  float: left;
-}
-.header__logout {
-  float: right;
-}
-.header__logout a {
-  display: inline-block;
-  color: colors(scaffold, logout);
-  padding: 5px 10px;
-  margin-left: 10px;
-  &:hover {
-    color: darken(colors(scaffold, logout), 15%);
-  }
-}
-.header__button {
-  font-size: 16px;
-}
-.header__button .material-icons {
-  font-size: inherit;
-  position: relative;
-  top: 2px;
-  margin-right: 3px;
-}
-.header__button--new-contact {
-  color: colors(scaffold, newContact);
-  margin-left: 30px;
-  position: relative;
-  top: -2px;
-  &:hover {
-    color: darken(colors(scaffold, newContact), 15%);
-  }
-}
 //bourboneas;dfa
 
 .centered-navigation {
   $base-border-radius: 3px !default;
   $dark-gray: #333 !default;
   $large-screen: 53.75em !default;
-  $base-font-color: $dark-gray !default;
+  $base-font-color: white !default;
   $centered-navigation-padding: 1em;
   $centered-navigation-logo-height: 2em;
-  $centered-navigation-background: #E7F1EC;
+  $centered-navigation-background: #455A64;
   $centered-navigation-color: transparentize($base-font-color, 0.3);
   $centered-navigation-color-hover: $base-font-color;
   $centered-navigation-height: 60px;

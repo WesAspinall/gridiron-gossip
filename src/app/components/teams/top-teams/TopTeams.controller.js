@@ -1,6 +1,7 @@
 function TopTeamsCtrl(TeamsService) {
 
   var ctrl = this;
+  ctrl.title = 'Top Teams (# of arrests)';
   ctrl.list = '';
   ctrl.getTopTeams = getTopTeams;
   ctrl.activate = activate;

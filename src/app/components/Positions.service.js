@@ -1,6 +1,6 @@
 function PositionsService($http, API) {
 
-  this.getTopPositions = function() {
+  this.getPositions = function() {
     return $http
       .get(API.POSITIONS).then((res) => {
         return res.data;
@@ -11,5 +11,5 @@ function PositionsService($http, API) {
 
 
 angular
-  .module('components.positions')
+  .module('components')
   .service('PositionsService', PositionsService);

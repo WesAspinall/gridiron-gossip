@@ -11,5 +11,5 @@ function CrimesService($http, API) {
 
 
 angular
-  .module('components.crimes')
+  .module('components')
   .service('CrimesService', CrimesService);

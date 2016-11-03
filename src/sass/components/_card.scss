@@ -61,9 +61,15 @@
     font-size: 0.9em;
     line-height: 1.5em;
     padding: ($base-spacing / 2) ($base-spacing / 2);
-
+    span {
+      font-style: italic;
+      margin-bottom: 1em;
+    }
     p {
       margin: 0 0 ($base-spacing / 2);
+    }
+    ol {
+      margin-left: 1em;
     }
   }
 
@@ -81,4 +87,17 @@
       background-color: $card-background;
     }
   }
+}
+
+.card-header {
+  ul li {
+    display: inline-block;
+    width: 50%;
+  }
+}
+
+.view-more {
+ text-align: right;
+ font-style: italic;
+
 }

@@ -1,7 +1,9 @@
 var appNav = {
 
-  templateUrl: './app-nav.html'
-
+  templateUrl: './app-nav.html',
+  controller: function() {
+    this.appTitle = 'hello';
+  }
 };
 
 angular

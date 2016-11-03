@@ -1,6 +1,6 @@
 let TeamsService = function($http, API) {
 
-  this.getTopTeams = function() {
+  this.getTeams = function() {
     return $http
       .get(API.TEAMS).then((res) => {
         return res.data;
@@ -10,5 +10,5 @@ let TeamsService = function($http, API) {
 };
 
 angular
-  .module('components.teams')
+  .module('components')
   .service('TeamsService', TeamsService);

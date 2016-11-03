@@ -1,6 +1,6 @@
 function PlayersService($http, API) {
 
-  this.getTopPlayers = function() {
+  this.getPlayers = function() {
     return $http
       .get(API.PLAYERS).then((res) => {
         return res.data;
@@ -11,5 +11,5 @@ function PlayersService($http, API) {
 
 
 angular
-  .module('components.crimes')
+  .module('components')
   .service('PlayersService', PlayersService);
