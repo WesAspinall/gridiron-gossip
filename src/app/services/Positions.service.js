@@ -11,5 +11,5 @@ function PositionsService($http, API) {
 
 
 angular
-  .module('components')
+  .module('services')
   .service('PositionsService', PositionsService);

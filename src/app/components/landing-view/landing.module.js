@@ -1,4 +1,4 @@
 angular
   .module('components.landing', [
-    'ui.router'
+    'ui.router', 'services'
   ]);

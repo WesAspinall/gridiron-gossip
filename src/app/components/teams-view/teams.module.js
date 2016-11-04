@@ -1,4 +1,4 @@
 angular
   .module('components.teams', [
-    'ui.router'
+    'ui.router', 'services'
   ]);

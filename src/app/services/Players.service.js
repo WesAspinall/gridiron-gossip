@@ -11,5 +11,5 @@ function PlayersService($http, API) {
 
 
 angular
-  .module('components')
+  .module('services')
   .service('PlayersService', PlayersService);

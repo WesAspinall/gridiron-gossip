@@ -1,8 +1,7 @@
 var appNav = {
-
   templateUrl: './app-nav.html',
   controller: function() {
-    this.appTitle = 'hello';
+    this.appTitle = 'illegalmotion.com';
   }
 };
 

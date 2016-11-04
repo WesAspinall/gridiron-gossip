@@ -10,5 +10,5 @@ let TeamsService = function($http, API) {
 };
 
 angular
-  .module('components')
+  .module('services')
   .service('TeamsService', TeamsService);

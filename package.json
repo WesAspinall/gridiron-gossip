@@ -17,6 +17,7 @@
     "angular-messages": "^1.5.8",
     "angular-nvd3": "^1.0.9",
     "angular-ui-router": "1.0.0-beta.2",
+    "angular-ui-tree": "^2.22.1",
     "babel-eslint": "^7.1.0",
     "bourbon": "^4.2.7",
     "jquery": "^3.1.1",

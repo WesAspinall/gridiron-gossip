@@ -31,12 +31,13 @@ const paths = {
   modules: [
     'angular/angular.min.js',
     'd3/d3.min.js',
-    'nvd3/build/nv.d3.js',
+    'nvd3/build/nv.d3.min.js',
     'angular-nvd3/dist/angular-nvd3.js',
     'oclazyload/dist/ocLazyLoad.min.js',
     'jquery/dist/jquery.min.js',
     'angular-ui-router/release/angular-ui-router.js',
-    'angular-loading-bar/build/loading-bar.min.js'
+    'angular-loading-bar/build/loading-bar.min.js',
+    'angular-ui-tree/dist/angular-ui-tree.min.js'
   ],
   //added to compile nvd3
   nvd3: 'nvd3/build/nv.d3.min.css',

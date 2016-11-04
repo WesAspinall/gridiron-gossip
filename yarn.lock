@@ -86,6 +86,10 @@ angular-ui-router@1.0.0-beta.2:
   version "1.0.0-beta.2"
   resolved "https://registry.yarnpkg.com/angular-ui-router/-/angular-ui-router-1.0.0-beta.2.tgz#079e971698c3daaaa11df1762835004391ba1bee"
 
+angular-ui-tree:
+  version "2.22.1"
+  resolved "https://registry.yarnpkg.com/angular-ui-tree/-/angular-ui-tree-2.22.1.tgz#ac4d1699dd47bc12ac4b1ed1bf6f135ba6c23c5e"
+
 angular@^1.5.8, angular@^1.x:
   version "1.5.8"
   resolved "https://registry.yarnpkg.com/angular/-/angular-1.5.8.tgz#925a5392b8c212d09572dc446db7e01264e094cb"

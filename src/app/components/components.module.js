@@ -4,6 +4,5 @@ angular
     'components.landing',
     'components.teams',
     'components.players',
-    'components.positions',
-    'components.charts'
+    'components.positions'
   ]);

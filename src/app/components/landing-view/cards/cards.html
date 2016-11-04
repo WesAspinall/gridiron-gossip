@@ -15,14 +15,14 @@
         <li ng-repeat='item in card.data | limitTo: 5'>{{item.Category}} ({{item.arrest_count}} arrests)</li>
       </ol>
       <ol ng-switch-when='players'>
-        <li ng-repeat='item in card.data | limitTo: 5'> {{item.Position}}, {{item.Name}}, {{item.arrest_count}} arrests ({{item.Team}})</li>
+        <li ng-repeat='item in card.data | limitTo: 5'> {{item.Position}}, {{item.Name}}, ({{item.arrest_count}} arrests)</li>
       </ol>
       <ol ng-switch-when='teams'>
-        <li ng-repeat='item in card.data | limitTo: 5'>
+        <li ng-repeat='item in card.data | limitTo: 80'>
        {{item.Team_name}} ({{item.arrest_count}} arrests)</li>
       </ol>
       <ol ng-switch-when='positions'>
-        <li ng-repeat='item in card.data | limitTo: 5'>{{item.Category}} ({{item.arrest_count}})</li>
+        <li ng-repeat='item in card.data | limitTo: 5'>{{item.Position}} ({{item.arrest_count}} arrests)</li>
       </ol>
     </div>
   </div>

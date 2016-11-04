@@ -1,5 +1,2 @@
 angular
-  .module('components.charts', [
-    'nvd3'
-  ])
-  ;
+  .module('components.charts', ['nvd3', 'services'])
