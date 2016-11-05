@@ -2,12 +2,12 @@ function CrimesService($http, API) {
 
   this.getCrimes = function() {
     return $http
-      .get(API.CRIMES+'?limit=1').then((res) => {
+      .get(API.CRIMES).then((res) => {
         return res.data;
       });
   };
 
-  this.getPlayers = function() {
+  this.getIncidents = function() {
     return $http
       .get(API.CRIMES+'/topPlayers/DUI').then((res) => {
         return res.data;

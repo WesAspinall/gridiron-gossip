@@ -33,14 +33,14 @@ const paths = {
     'd3/d3.min.js',
     'nvd3/build/nv.d3.min.js',
     'angular-nvd3/dist/angular-nvd3.js',
+    'angular-ivh-treeview/dist/ivh-treeview.min.js',
     'oclazyload/dist/ocLazyLoad.min.js',
     'jquery/dist/jquery.min.js',
     'angular-ui-router/release/angular-ui-router.js',
     'angular-loading-bar/build/loading-bar.min.js',
-    'angular-ui-tree/dist/angular-ui-tree.min.js'
   ],
   //added to compile nvd3
-  nvd3: 'nvd3/build/nv.d3.min.css',
+  tree: 'angular-ivh-treeview/dist/angular-ivh-treeview.min.css',
   static: [
     `${root}/index.html`,
     `${root}/fonts/**/*`,
@@ -101,9 +101,13 @@ gulp.task('modules', ['templates'], () => {
     .pipe(gulp.dest(paths.dist + 'js/'));
 });
 
+gulp.task('tree', () => {
+  return gulp.src('node_modules/angular-ivh-treeview/dist/angular-ivh-treeview.min.css')
+  .pipe(gulp.dest(paths.dist + 'css/'));
+});
 
 gulp.task('styles', () => {
-  return gulp.src([paths.styles, paths.nvd3])
+  return gulp.src([paths.styles])
     .pipe(sass({outputStyle: 'compressed', includePaths: require('node-neat').includePaths}))
     .on('error', handleError)
     .pipe(gulp.dest(paths.dist + 'css/'));

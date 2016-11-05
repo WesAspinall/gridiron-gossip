@@ -1,5 +1,6 @@
 var crimes = {
-  templateUrl: './crimes.html'
+  templateUrl: './crimes.html',
+  controller: 'CrimesCtrl'
 };
 
 angular
