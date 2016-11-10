@@ -1,0 +1,10 @@
+<div class='teams-list'>
+  <ul>
+    <li 
+      ng-repeat='item in $ctrl.teams'
+      class='pill--{{item.Team | lowercase}}'
+      ng-click='$ctrl.teamsPage(item.Team)'> 
+      {{item.Team}} 
+    </li>
+  </ul>
+</div>

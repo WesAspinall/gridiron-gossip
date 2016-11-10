@@ -33,14 +33,13 @@ const paths = {
     'd3/d3.min.js',
     'nvd3/build/nv.d3.min.js',
     'angular-nvd3/dist/angular-nvd3.js',
-    'angular-ivh-treeview/dist/ivh-treeview.min.js',
-    'oclazyload/dist/ocLazyLoad.min.js',
-    'jquery/dist/jquery.min.js',
     'angular-ui-router/release/angular-ui-router.js',
     'angular-loading-bar/build/loading-bar.min.js',
+    'angular-animate/angular-animate.min.js',
+    'angular-touch/angular-touch.min.js',
+    'angular-ui-bootstrap/dist/ui-bootstrap.js',
+    'angular-ui-bootstrap/dist/ui-bootstrap-tpls.js'
   ],
-  //added to compile nvd3
-  tree: 'angular-ivh-treeview/dist/angular-ivh-treeview.min.css',
   static: [
     `${root}/index.html`,
     `${root}/fonts/**/*`,

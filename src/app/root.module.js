@@ -3,5 +3,6 @@ angular
     'app',
     'components',
     'services',
-    'templates'
+    'templates',
+    'ui.bootstrap'
   ]);

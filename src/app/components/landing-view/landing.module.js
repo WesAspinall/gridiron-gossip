@@ -1,4 +1,2 @@
 angular
-  .module('components.landing', [
-    'ui.router', 'services'
-  ]);
+  .module('components.landing', ['nvd3', 'ui.bootstrap.datepickerPopup']);

@@ -1,5 +1,6 @@
 function PlayersService($http, API) {
 
+  var URL = 'http://nflarrest.com/api/v1/player/arrests/'
   this.getPlayers = function() {
     return $http
       .get(API.PLAYERS).then((res) => {
@@ -7,6 +8,14 @@ function PlayersService($http, API) {
       });
   };
 
+  this.getDetails = function(params) {
+    return $http
+      .get(URL+params)
+      .then((res) => {
+        console.log(res.data);
+        return res.data;
+      })
+  };
 }
 
 

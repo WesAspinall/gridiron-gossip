@@ -1,0 +1,65 @@
+<div>
+ <button ui-sref='landing'>back</button>
+<input placeholder='search for player' type='search' ng-model='search'>
+  <div class='container-fluid'>
+    <div class="col-md-6 col-lg-6 text-center">
+      <h3>{{$ctrl.team}} Top Players</h3>
+      <ol>
+        <li
+          ng-click='showDetails = !showDetails' 
+          class='text-left player-list'
+          ng-repeat='player in $ctrl.topPlayers | filter: search'>
+          {{player.Name}} ({{player.arrest_count}})
+          <ul class='crime-list' ng-if='showDetails' ng-animate="'animate'">
+
+            <li ng-repeat='crime in $ctrl.crimeDetails track by crime.arrest_stats_id'
+            ng-if='crime.Name === player.Name'>
+            <p>
+              {{crime.Date}}
+            </p>
+
+            <p>
+              {{crime.Category}}
+            </p>
+
+            <p>
+              {{crime.Description}}
+            </p>
+            </li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+
+    <div  class="col-md-6 col-lg-6 text-center">
+      <h3> Top Arrests </h3>
+      <ol   class='text-left'>
+        <li
+          ng-click='showDetails = !showDetails' 
+          class='text-left'
+          ng-repeat='crime in $ctrl.topCrimes'
+          >
+          {{crime.Category}} ({{crime.arrest_count}})
+          <ul ng-if='showDetails'>
+            <li
+              ng-repeat='item in $ctrl.crimeDetails'
+              ng-if='item.Category === crime.Category' 
+              > <p>
+              {{item.Date}}
+            </p>
+
+            <p>
+              {{item.Category}}
+            </p>
+
+            <p>
+              {{item.Description}}
+            </p>
+          </li>
+          </ul>
+        </li>
+
+      </ol>
+    </div>
+</div>
+</div>

@@ -1,4 +1,5 @@
 var landing = {
+
   templateUrl: './landing.html'
 };
 
@@ -9,7 +10,7 @@ angular
 
     $stateProvider
       .state('landing', {
-        parent:'app',
+        parent: 'app',
         url: '^/',
         component: 'landing'
       });
