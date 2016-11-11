@@ -1,24 +1,51 @@
+@import 'components';
 
-// Utils
-// Contains all mixins, functions and helpers
-@import "utils";
-
-// Base
-// Contains all the global styles for the application as well as the resets, typography, colors, buttons, etc...
-// You should also define a _variables.scss to define all app variables
-@import "base";
+.crime-list {
+   transition: all .5s ease;
+}
 
 
-// Components
-// Contains each isolated component. Should ideally mimic the Angular component structure
-@import "components";
+
+.player-list:hover {
+  cursor: pointer;
+
+}
+
+.horizontal-collapse {
+    height: 70px;
+  }
+  .navbar-collapse.in {
+    overflow-y: hidden;
+  }
 
 
-// Layout
-// Contains styling elements for the larger 'core' modules like loading bars / indicators, wrappers, containers, etc...
-@import "layout";
 
-
-// Vendors
-// Contains all the 3rd party styles
-@import "vendors";
+  .animate-enter, 
+.animate-leave
+{ 
+    -webkit-transition: 400ms cubic-bezier(0.420, 0.000, 1.000, 1.000) all;
+    -moz-transition: 400ms cubic-bezier(0.420, 0.000, 1.000, 1.000) all;
+    -ms-transition: 400ms cubic-bezier(0.420, 0.000, 1.000, 1.000) all;
+    -o-transition: 400ms cubic-bezier(0.420, 0.000, 1.000, 1.000) all;
+    transition: 400ms cubic-bezier(0.420, 0.000, 1.000, 1.000) all;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    text-overflow: clip;
+    white-space:nowrap;
+} 
+ 
+.animate-leave.animate-leave-active,
+.animate-enter {
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+}
+ 
+.animate-enter.animate-enter-active, 
+.animate-leave {
+    opacity: 1;
+    width: 150px;
+    height: 30px;
+}
+  

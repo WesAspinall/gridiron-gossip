@@ -1,7 +1,6 @@
 var appNav = {
 
   templateUrl: './app-nav.html'
-
 };
 
 angular

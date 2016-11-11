@@ -2,5 +2,7 @@ angular
   .module('root', [
     'app',
     'components',
-    'templates'
+    'services',
+    'templates',
+    'ui.bootstrap'
   ]);

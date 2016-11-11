@@ -1,0 +1,66 @@
+//team colors 
+
+$team-colors: (
+  "min": #9E59CB,
+  "den": #1C243B,
+  "cin": #E22802,
+  "tb": #AA133C,
+  "ten": #6D87B8,
+  "jac": #315D66,
+  "cle": #DD600C,
+  "ind": #1C4176,
+  "chi": #D16618,
+  "kc":  #970F33,
+  "mia": #116184,
+  "bal": #1F0B3E,
+  "sd":  #35386B,
+  "no":  black,
+  "sf": #810D22,
+  "pit": black,
+  "sea": #314657,
+  "gb": #394039,
+  "was": #810D22,
+  "oak": black,
+  "atl": black,
+  "ne": #041E41,
+  "car": #1E6990,
+  "ari": #A02343,
+  "nyj": #33443A,
+  "det": #005BA9,
+  "buf": red,
+  "dal": #0B294F,
+  "phi": #536967,
+  "la": #0A3150,
+  "nyg": #222977,
+  "hou": #AC0634,
+  "free": black,
+) !default;
+
+.teams-list   ul {
+
+  list-style-type: none;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+
+};
+
+//team pills
+@each $team-color, $team in $team-colors { 
+
+  .pill--#{$team-color} {
+    border: 1px solid $team;
+    color: $team;
+    padding: .5em;
+    width: 70px;
+    text-align: center;
+    border-radius: 3px;
+    display: inline-block;
+    margin: 1em;
+    transition: all .5s ease;
+  }
+  .pill--#{$team-color}:hover {
+    background-color: $team;
+    color: white;
+  }
+}
